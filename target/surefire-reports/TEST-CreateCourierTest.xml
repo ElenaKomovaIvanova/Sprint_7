@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="CreateCourierTest" time="13.86" tests="15" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="D:\личное\Обучение\Обучение Тестирование\7 спринт\Sprint_7\target\test-classes;D:\личное\Обучение\Обучение Тестирование\7 спринт\Sprint_7\target\classes;C:\Users\e.komova\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\e.komova\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\e.komova\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\e.komova\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\e.komova\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\e.komova\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\e.komova\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\e.komova\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\e.komova\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\e.komova\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\e.komova\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\e.komova\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\e.komova\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\e.komova\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\e.komova\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\e.komova\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-junit4\2.24.0\allure-junit4-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\e.komova\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-rest-assured\2.24.0\allure-rest-assured-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-attachments\2.24.0\allure-attachments-2.24.0.jar;C:\Users\e.komova\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\e.komova\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.18_10\bin"/>
+    <property name="sun.java.command" value="C:\Users\e.komova\AppData\Local\Temp\surefire10805083813833947764\surefirebooter-20230908154424610_3.jar C:\Users\e.komova\AppData\Local\Temp\surefire10805083813833947764 2023-09-08T15-44-22_898-jvmRun1 surefire-20230908154424610_1tmp surefire_0-20230908154424610_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\личное\Обучение\Обучение Тестирование\7 спринт\Sprint_7\target\test-classes;D:\личное\Обучение\Обучение Тестирование\7 спринт\Sprint_7\target\classes;C:\Users\e.komova\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\e.komova\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\e.komova\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\e.komova\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\e.komova\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\e.komova\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\e.komova\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\e.komova\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\e.komova\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\e.komova\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\e.komova\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\e.komova\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\e.komova\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\e.komova\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\e.komova\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\e.komova\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\e.komova\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-junit4\2.24.0\allure-junit4-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\e.komova\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-rest-assured\2.24.0\allure-rest-assured-2.24.0.jar;C:\Users\e.komova\.m2\repository\io\qameta\allure\allure-attachments\2.24.0\allure-attachments-2.24.0.jar;C:\Users\e.komova\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\e.komova\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
+    <property name="allure.results.directory" value="D:\личное\Обучение\Обучение Тестирование\7 спринт\Sprint_7\target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\e.komova"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk11.0.18_10"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\личное\Обучение\Обучение Тестирование\7 спринт\Sprint_7"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\e.komova\AppData\Local\Temp\surefire10805083813833947764\surefirebooter-20230908154424610_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.18+10-LTS"/>
+    <property name="user.name" value="e.komova"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.18.10.1"/>
+    <property name="localRepository" value="C:\Users\e.komova\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\EDE7D~1.KOM\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.18"/>
+    <property name="user.dir" value="D:\личное\Обучение\Обучение Тестирование\7 спринт\Sprint_7"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.18_10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Amazon Corretto\jdk11.0.18_10\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\e.komova\AppData\Local\Microsoft\WindowsApps;C:\Users\e.komova\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin;;C:\apache-maven-3.8.8\bin;C:\WebDriver;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.18+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="createCourier_duplicatesCod_test" classname="CreateCourierTest" time="7.496">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:33 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=jXhDwR6/AUtry0Kyxz6DmIYB5BJaKzZPl5GT5y0ocpxC+ggwvTkXm1b4Nwo0+qnD; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:33 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177073096052-4453470087011001041
+
+{
+    "ok": true
+}
+HTTP/1.1 409 Conflict
+Access-Control-Allow-Origin: *
+Content-Length: 112
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:33 GMT
+ETag: W/"70-sLG1ZktNk+Ab3iaKUMwxkdL4FJo"
+Set-Cookie: _yasc=PxqDXhkBQPRlc7QpD4MWvoQm3j5LHcqfsjdQKdGHtgXte0frYwb2y+Z86LAzmUQC; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:33 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177073557392-15600396960314939583
+
+{
+    "code": 409,
+    "message": "Этот логин уже используется. Попробуйте другой."
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:33 GMT
+ETag: W/"d-CPISB/lPvwlO/UoK+H/AX6AHJBs"
+Set-Cookie: _yasc=FlkG8Uibx+sYQCi8cquUFWAO/PV/5M+s6UIOG3BVG2vgIwzr4QumLda6mRYdXCqMUg==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:33 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177073764091-14982340694752937520
+
+{
+    "id": 220241
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:33 GMT
+ETag: W/"d-CPISB/lPvwlO/UoK+H/AX6AHJBs"
+Set-Cookie: _yasc=PWOBaQFwoGC7X8HjYGPB8sW5E3WFPT89rTsJIcD/2q9SIiDxOVvw2t1kvG0G4SqI; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:33 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177073894530-15647944907885329191
+
+{
+    "id": 220241
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:35 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=6pqxnRukszmkPbD9BFZLe+u1NSoOrZkF/0g3nlaISqWMa2mpo4TGCj+43Rm7NhCv; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:35 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177075380252-12615607582753266196
+
+{
+    "ok": true
+}
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="createCourier_authorization_loginError_test" classname="CreateCourierTest" time="0.61">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:35 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=ySi1qNzWXlzWCkaSIBg7bB7iCAu3MItFl70BbV2AAoOB595+Yz/Mom8s0p4WlzPc; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:35 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177075704184-8241518653485521843
+
+{
+    "ok": true
+}
+HTTP/1.1 404 Not Found
+Access-Control-Allow-Origin: *
+Content-Length: 72
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:35 GMT
+ETag: W/"48-SNOWaDub1LGYtleYI6ITphu8xIQ"
+Set-Cookie: _yasc=O2WieWaghwRH4YpKnwCe5lQ3p2TWtti0LQGARFG6oIWbIDUO2LGO6YqQruaFStdr; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:35 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177075900803-9733149799588820654
+
+{
+    "code": 404,
+    "message": "Учетная запись не найдена"
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:36 GMT
+ETag: W/"d-aLv5g9alJzHhgz7Vm4yVNO8/xNY"
+Set-Cookie: _yasc=TtkQZzFIrUUNPzhu2WA/ai2Qn2WBkasJLNrvgG4sHvNOxjBzrNnO4eu7/+Yv9+oK/w==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:35 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177075988420-11387141454984601784
+
+{
+    "id": 220242
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:36 GMT
+ETag: W/"d-aLv5g9alJzHhgz7Vm4yVNO8/xNY"
+Set-Cookie: _yasc=I/7XF2FDgnu2xWStTEe6p4mxERM5wdzAL89MGX7eu4PUwXEsTNlLIASvAgb0MolcJA==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:36 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177076082248-4024505688064047281
+
+{
+    "id": 220242
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:36 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=xt5wkyDXyHDxQj4zs/Ja8I58vROd2zwE9kvKu+Wg3drBf+WNZdoYZTgqoA2JC12X; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:36 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177076200975-12041335149870635957
+
+{
+    "ok": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createCourier_noLogin_test" classname="CreateCourierTest" time="0.242">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Access-Control-Allow-Origin: *
+Content-Length: 114
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:36 GMT
+ETag: W/"72-AUDx41VLe1HSztSRMybiiyHwcKY"
+Set-Cookie: _yasc=S63k9PPS7FRiT9uX8E6JubtJFwPaQljFMI7hhecKY9j7b+sc3tjiAM2UkczM6CgG; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:36 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177076301185-12270275876408648926
+
+{
+    "code": 400,
+    "message": "Недостаточно данных для создания учетной записи"
+}
+HTTP/1.1 404 Not Found
+Access-Control-Allow-Origin: *
+Content-Length: 72
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:36 GMT
+ETag: W/"48-SNOWaDub1LGYtleYI6ITphu8xIQ"
+Set-Cookie: _yasc=auLebvkEIqaNxDoglAwkQvNLGZVACAjUjcH39ppK1Gs1icB88o6HFlM1sfeb0U0Aew==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:36 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177076405546-10064860424931524378
+
+{
+    "code": 404,
+    "message": "Учетная запись не найдена"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="authorization_containsId_test" classname="CreateCourierTest" time="0.601">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:36 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=vAAsVqkz4Uvw8zU0z2B02Ii52DYOivNPk0rEv1hEsoNBOv4hNXkuQsWyvd4kWCJCHg==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:36 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177076528373-14813831387041859225
+
+{
+    "ok": true
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:36 GMT
+ETag: W/"d-HIPI4PO6mCfDUDhbueFtyJEuAnw"
+Set-Cookie: _yasc=7qz1spN5psETLANIUdAXpvBOIqkatiFtxDgcqBQ2dU4vov7Acm2cdB/Na/S9j8wyNA==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:36 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177076654376-885028773921614145
+
+{
+    "id": 220243
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:36 GMT
+ETag: W/"d-HIPI4PO6mCfDUDhbueFtyJEuAnw"
+Set-Cookie: _yasc=vbYpdcR3+ROTbmcpfPOMtmoq4WPT9RUlpIomg1DqitwRF4duwh4zu/xQ4e7RqtIY; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:36 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177076811331-12838672895636705765
+
+{
+    "id": 220243
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:36 GMT
+ETag: W/"d-HIPI4PO6mCfDUDhbueFtyJEuAnw"
+Set-Cookie: _yasc=f7Nf05MQssZLqVx3wVmpl+Op/NuRUesQBAkO9WK1gT6m/v2HDTrVOmvQ6ajF8moS; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:36 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177076894211-12269752952157791594
+
+{
+    "id": 220243
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:37 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=EaMoNxSiCAHZ6h9lSZ04Eypc708joF3mdlJZo1XOUMLQ1Wbs3Sk14rCg5XjgcMfG; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:37 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177077025577-13812786660529196461
+
+{
+    "ok": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createCourier_authorization_noPassword_test" classname="CreateCourierTest" time="0.422">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:37 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=6c9Y4YpZtxa5U8GRIyvGpKCn6UTuMAR6MYJiQut2klvnxqTbYVYLxLoKaoYqferY; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:37 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177077132047-12295968072066239450
+
+{
+    "ok": true
+}
+HTTP/1.1 400 Bad Request
+Access-Control-Allow-Origin: *
+Content-Length: 80
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:37 GMT
+ETag: W/"50-LwGSJxcCDIE8JNxAo8HI82cPc8A"
+Set-Cookie: _yasc=17ljN/X0u66av7mQyj+UJ8ms9bPeJOUk7bUXtFAPiq9QpIuE4ywrjxvuIiKH+EF1fw==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:37 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177077234470-13972822005143693026
+
+{
+    "code": 400,
+    "message": "Недостаточно данных для входа"
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:37 GMT
+ETag: W/"d-g2rtl8w/uvJ678yDuP8J6yHQB7I"
+Set-Cookie: _yasc=HnA1H8Uc32pVHCQlHOvAXvE0i3EKmKvMwel/IFq4eNgUfDGewyYs4bHkYdJayXSx; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:37 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177077296361-1170606431465905584
+
+{
+    "id": 220244
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:37 GMT
+ETag: W/"d-g2rtl8w/uvJ678yDuP8J6yHQB7I"
+Set-Cookie: _yasc=/lw8CcwepVdswkdgA9A/jmcCQO0r85pPLXx/YobD32uiGHYl7uA5YhIr9dgqC+YS; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:37 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177077387470-17694949487540150005
+
+{
+    "id": 220244
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:37 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=yKxIar+sfvI+PFpAmypH+sI8/jtmmxPAeeyNvecocsllitf0jeArV6DDk6GSTJ0S; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:37 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177077482529-8268315916542511995
+
+{
+    "ok": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createCourier_authorization_test" classname="CreateCourierTest" time="0.449">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:37 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=UhZThLfRADGVyWzvb+uyz0TJHH1VaLkjDuk3jniB4NNz/vbragUQQmlKcEDWaR2u; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:37 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177077565559-3112778672697671460
+
+{
+    "ok": true
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:37 GMT
+ETag: W/"d-3JD3bVcKi9YHr9UMQxWDZ5cVxVs"
+Set-Cookie: _yasc=9+OeNo9lZuf5lke2pXhGmoLvWVIGG8zLMn8+YzZ5xLcjDwBQLCtoQmELKSR6TAtiqA==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:37 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177077654358-16715641848354723776
+
+{
+    "id": 220245
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:37 GMT
+ETag: W/"d-3JD3bVcKi9YHr9UMQxWDZ5cVxVs"
+Set-Cookie: _yasc=91sxFWel8q4wA5qQ6HZsyB4kpgpL8Ou+03568wtZAcuA52qfpAZb7/WZ6Zv6xd66; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:37 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177077730838-3573955683928726233
+
+{
+    "id": 220245
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:37 GMT
+ETag: W/"d-3JD3bVcKi9YHr9UMQxWDZ5cVxVs"
+Set-Cookie: _yasc=O7YwuHmJEE/MxTP8dx1SOE/lCsq0f1KHIQsFthY8x2FceO4InM47JNvs9OU9TI20; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:37 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177077831276-1472222189013913054
+
+{
+    "id": 220245
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:37 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=uOr8GYZu/A7+21GCz9rUpmgT1OqvXi1swCymJxSV6I+68Xf2pMVxqFA9j+EVUAI2; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:37 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177077933925-4519235670892437921
+
+{
+    "ok": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createCourier_exp201_test" classname="CreateCourierTest" time="0.353">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:38 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=9VKitKMfataZ2bPQkuUEWkayU1bK8hGR8Qf55LWuU4W5VS0Mg0KebwxkRiFZ8REZiA==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:38 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177078010918-5477685459033647587
+
+{
+    "ok": true
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:38 GMT
+ETag: W/"d-EC45rahk6TccPR2ekSqKsiXqmQc"
+Set-Cookie: _yasc=wn7cApibN4W0sdugRF5l9YvjlBztX5TMqqw9PRyPIJlXqBxRlFwPbi62DLCSdnie; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:38 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177078084105-15311811704309508367
+
+{
+    "id": 220246
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:38 GMT
+ETag: W/"d-EC45rahk6TccPR2ekSqKsiXqmQc"
+Set-Cookie: _yasc=MwDIUuPJNl2/31JfRpXGxIOoY6ki2Wtvach98QyYbMH3FN/iQh29itK/2o2tW+91ZA==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:38 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177078184204-16936472345012919808
+
+{
+    "id": 220246
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:38 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=MZbZpOlddWo2FuyFKkYhL4urqGT4wbuLv8ukHPBDXvrRoDi39nldIS0nFvLAs+OMzg==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:38 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177078264106-14997061932987975552
+
+{
+    "ok": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createCourier_expOk_test" classname="CreateCourierTest" time="0.524">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:38 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=rsXOs0umWsDdoATkCWNy8hsrFxetJXyQcKfg7l4SVvb2C5ZrM2hvyDUe+S8D7HecgQ==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:38 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177078359336-6296907283055580129
+
+{
+    "ok": true
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:38 GMT
+ETag: W/"d-WOF6J7ZWRLx664TWupMUuY98JfM"
+Set-Cookie: _yasc=I0BhcFzKXwzH6YioYN+OcQBGd0AAPlAHDqEllCae88LAWW/lMEBRN5ggkYmtjlLn; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:38 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177078597500-3782409361434674497
+
+{
+    "id": 220247
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:38 GMT
+ETag: W/"d-WOF6J7ZWRLx664TWupMUuY98JfM"
+Set-Cookie: _yasc=XD1Yi5YTXRZ9HsSrzYjbr7B/i6nMkeAvJruVZbste70U7SLl6KfU4jXA/OYTh7bMxA==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:38 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177078709650-15948472338803655438
+
+{
+    "id": 220247
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:38 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=Wr5Mv0Xn9bM0hr0DUab6uzXMpFWl/7kp0USlRHjTnousYML4wYr1muAJ0rPIKedS; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:38 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177078799745-11711519681849703567
+
+{
+    "ok": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createCourier_noPassword_test" classname="CreateCourierTest" time="0.165">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Access-Control-Allow-Origin: *
+Content-Length: 114
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:38 GMT
+ETag: W/"72-AUDx41VLe1HSztSRMybiiyHwcKY"
+Set-Cookie: _yasc=zY2srqD2vC50LUB9zj408Q9ONZAWK5J/bGiAVxS7AdBnTd7MG7geG9P7DP5KvT+2; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:38 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177078888330-14392439248373721151
+
+{
+    "code": 400,
+    "message": "Недостаточно данных для создания учетной записи"
+}
+HTTP/1.1 404 Not Found
+Access-Control-Allow-Origin: *
+Content-Length: 72
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:38 GMT
+ETag: W/"48-SNOWaDub1LGYtleYI6ITphu8xIQ"
+Set-Cookie: _yasc=lN8k1Eku4saAhszqn/7aP+gu8mbTLzPk6+gvHDTUaqnnVTcZL0UFhiSf+3zvu9owZA==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:38 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177078967814-14908925310635135648
+
+{
+    "code": 404,
+    "message": "Учетная запись не найдена"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createCourier_authorization_noLoginMessage_test" classname="CreateCourierTest" time="0.473">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:39 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=4FHswWX03jOvmCw2U3z7cl1LWET18NkbUrsOyaunBgWuz4Z2VmBrIzEH3A4QFACj; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:39 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177079058112-13916906328663249417
+
+{
+    "ok": true
+}
+HTTP/1.1 400 Bad Request
+Access-Control-Allow-Origin: *
+Content-Length: 80
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:39 GMT
+ETag: W/"50-LwGSJxcCDIE8JNxAo8HI82cPc8A"
+Set-Cookie: _yasc=dDCWwLgK498HBxi3es6CsB09Uiyp+pRh+6vygdE5dV1Hci806tfEZaJN/guFtbbufQ==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:39 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177079150863-5443424283249686904
+
+{
+    "code": 400,
+    "message": "Недостаточно данных для входа"
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:39 GMT
+ETag: W/"d-M097zaWeZwxqulp2zNBhPQZ1NdI"
+Set-Cookie: _yasc=UzcZUtiP2WSplcruiAQvLpnXhMtD82PN5sXCT4wAiryDdKSliKxU+JbBh95sS5vCVQ==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:39 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177079231966-11775689248074819035
+
+{
+    "id": 220248
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:39 GMT
+ETag: W/"d-M097zaWeZwxqulp2zNBhPQZ1NdI"
+Set-Cookie: _yasc=gbQkbtG5YuFMl8EEdqrfjdvI1SOgg0hB0bZJ6Jd+PID1sKjSw+MHQoRtXVTievZMdw==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:39 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177079364425-8115634225063755892
+
+{
+    "id": 220248
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:39 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=/iq6EQXT4J+VuKA9wosB1uBmGQ72QZfeWltcIZAV/R0i7b6T6EQM67QlhH03O8+S; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:39 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177079444280-4305636626046345582
+
+{
+    "ok": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createCourier_authorization_noLogin_test" classname="CreateCourierTest" time="0.501">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:39 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=vgiK7gf92ifkMK8kmJFVJXbJMbRgf0eOuvbbJ8g4V25sOKAttQdQBdroQoIvrJe6; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:39 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177079527891-6532314747511150693
+
+{
+    "ok": true
+}
+HTTP/1.1 400 Bad Request
+Access-Control-Allow-Origin: *
+Content-Length: 80
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:39 GMT
+ETag: W/"50-LwGSJxcCDIE8JNxAo8HI82cPc8A"
+Set-Cookie: _yasc=9z2UX0YJUwkeMZdr8rPv5DfgzQU08p8LQjF1J2Jz0/KRFm3nK5QcmzwVkUbd6pnA; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:39 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177079619272-11657392612449914868
+
+{
+    "code": 400,
+    "message": "Недостаточно данных для входа"
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:39 GMT
+ETag: W/"d-CYv77TIAQIzpMO3Aq9bzLk8VGMY"
+Set-Cookie: _yasc=gOU4AyupNN1ugkZ5k6QnnhDZBl/JXXuFOVIO9Xpq74pNsGRNMqkIaSg3vltxBl6h; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:39 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177079722721-1694829003611631844
+
+{
+    "id": 220249
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:39 GMT
+ETag: W/"d-CYv77TIAQIzpMO3Aq9bzLk8VGMY"
+Set-Cookie: _yasc=Vd3X3V1AcXFHJ0EtCUzUL2JBUyQgPrQxnH+2yO1NVuzZ7Pt2XevhWcfLxAAyAsko; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:39 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177079830846-10437602973892958012
+
+{
+    "id": 220249
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:39 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=zrcI2Bo7Q3u9xLNgzdi8tlELi5upQUj1USfeEk4SEekRj4DXjFmKZlRaOSa/IT+txQ==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:39 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177079927283-13522632008770143126
+
+{
+    "ok": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createCourier_noPassword_noLogin_test" classname="CreateCourierTest" time="0.169">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Access-Control-Allow-Origin: *
+Content-Length: 114
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:40 GMT
+ETag: W/"72-AUDx41VLe1HSztSRMybiiyHwcKY"
+Set-Cookie: _yasc=5JnEuXjMdU0SwGifokpWwv7tU0W2TbG3i0FrarTurqN0nC7E4EGmM7RcAWNFxmjLOg==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:40 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177080022553-16938031119812539209
+
+{
+    "code": 400,
+    "message": "Недостаточно данных для создания учетной записи"
+}
+HTTP/1.1 404 Not Found
+Access-Control-Allow-Origin: *
+Content-Length: 72
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:40 GMT
+ETag: W/"48-SNOWaDub1LGYtleYI6ITphu8xIQ"
+Set-Cookie: _yasc=QIwQYJwcgqba1AWrAaj7RVqLQH4Wga/Omt/pLLILAIZmLc+WhqZjqSHd8BAqgDd83g==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:40 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177080110375-11609883340635146834
+
+{
+    "code": 404,
+    "message": "Учетная запись не найдена"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createCourier_duplicatesBody_test" classname="CreateCourierTest" time="0.556">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:40 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=VEFOB8b0Gm+iHnNTJIxaWn3yTk/fDM6vqJlRkKM5se7doxiyUywyU+y23QZSsQTX; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:40 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177080190845-15467328741984064833
+
+{
+    "ok": true
+}
+HTTP/1.1 409 Conflict
+Access-Control-Allow-Origin: *
+Content-Length: 112
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:40 GMT
+ETag: W/"70-sLG1ZktNk+Ab3iaKUMwxkdL4FJo"
+Set-Cookie: _yasc=g5fiYONyLpwmgj4AAZdg66sJ9nU11WX/fV1JYxuXZBQ5KjnYSgv5CA1Ty34R/2Z7Bg==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:40 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177080319607-3162609851349258805
+
+{
+    "code": 409,
+    "message": "Этот логин уже используется. Попробуйте другой."
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:40 GMT
+ETag: W/"d-c7eBtjCYC8fMY69RBCOpqANwo8I"
+Set-Cookie: _yasc=ooJZ6s2dmrYXceEDD4rldE/Z4RLR2OVtu/+zcCF/gi9VCLBn3D32HpDjAXPDixIa; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:40 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177080440943-11423055134911120976
+
+{
+    "id": 220250
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:40 GMT
+ETag: W/"d-c7eBtjCYC8fMY69RBCOpqANwo8I"
+Set-Cookie: _yasc=tBPPLZyewq3Y0Uurr+7ms013XmhxETlJOLB0cvk3a1gNAOM0hZflmUV1Z3vw/hTuaw==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:40 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177080539963-3330546101134653071
+
+{
+    "id": 220250
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:40 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=fZw81HqF/0MoPEb59yV8Khy4y0vt+qhxKOyXhNmgtXLjYEDitXJt+8V0SVRd8G99; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:40 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177080665593-15977088834090812668
+
+{
+    "ok": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createCourier_authorization_loginErrorMessage_test" classname="CreateCourierTest" time="0.45">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:40 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=9HV//biEWF86TuP/8KJSx1iv1owW77Pg47ML6a4B3nZUAyqvuGx5b4JeKQpteJ4OCA==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:40 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177080772013-14547438021728616984
+
+{
+    "ok": true
+}
+HTTP/1.1 404 Not Found
+Access-Control-Allow-Origin: *
+Content-Length: 72
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:40 GMT
+ETag: W/"48-SNOWaDub1LGYtleYI6ITphu8xIQ"
+Set-Cookie: _yasc=xSeVmlJWGV7ElF/BYWAUoeVyWykwYRNJvr36uUhsuy+VD5E2AcQp5O+yo5SXlhq/ug==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:40 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177080871392-12147172977676713071
+
+{
+    "code": 404,
+    "message": "Учетная запись не найдена"
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:40 GMT
+ETag: W/"d-xtV9TlIhQB7Nd23JJc2wXEgwR9Q"
+Set-Cookie: _yasc=ZyT7MhSZTSEbR/dE3ylc57wnhX4CFLd9ktDRm4MjGvAfOYN6bSbJXUWOzwH0uF/DxA==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:40 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177080956190-18203887186435882068
+
+{
+    "id": 220251
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:41 GMT
+ETag: W/"d-xtV9TlIhQB7Nd23JJc2wXEgwR9Q"
+Set-Cookie: _yasc=iuoi0S82eolrMD8eq+x6oO5LOQNsZ4KwhACK6TpshEdUpDycpfpWEBt7l3S+jrX7mw==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:41 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177081028693-10093143207299014631
+
+{
+    "id": 220251
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:41 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=RV2MxwNK8DnkHQwSy1CRjoFilAUnNYLFc+KCbOKhmbF3yxVtGN0Y7y5IdY5mHbwY; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:41 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177081134489-5312305904174149041
+
+{
+    "ok": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createCourier_authorization_noPasswordMessage_test" classname="CreateCourierTest" time="0.471">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:41 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=xaMTQSICLTKaaOFGaQyDl3YwM/0QxCtYizG3UkDlvxrH/i8UkXOjUQzLKeRtxJgQtA==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:41 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177081205737-4269542237733007740
+
+{
+    "ok": true
+}
+HTTP/1.1 400 Bad Request
+Access-Control-Allow-Origin: *
+Content-Length: 80
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:41 GMT
+ETag: W/"50-LwGSJxcCDIE8JNxAo8HI82cPc8A"
+Set-Cookie: _yasc=4VopYxfIiOFR4G9NB+SEDfvkJzL86KEOmtT5yTeIDieAsI3k80XvkS4GqMnMGNq2iw==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:41 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177081301575-6120994174337577587
+
+{
+    "code": 400,
+    "message": "Недостаточно данных для входа"
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:41 GMT
+ETag: W/"d-J97Mx5JIKXkCiwvCKdvxbBIkNnA"
+Set-Cookie: _yasc=9FBU+Zds77lGwtj+iFVi5Cjx8U+omoAnaPUBMONwIsLWLZwfllN5kchNOud7jplK; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:41 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177081383292-6057651919444616350
+
+{
+    "id": 220252
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:41 GMT
+ETag: W/"d-J97Mx5JIKXkCiwvCKdvxbBIkNnA"
+Set-Cookie: _yasc=3xX1xQNNKlhY7z2/j9Tx+S1GV4DcpED++PfL7njI4wpU+eTvXazCqyHJtSawXJqayA==; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:41 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177081506484-15311693974803537629
+
+{
+    "id": 220252
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 08 Sep 2023 12:44:41 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=nY1xAqgoVbHvLPKYVcYpyKWdn1OSshbwtPLXUS3nGXu06jg1uBvTCE8m2jlFcRxO; domain=.praktikum-services.ru; path=/; expires=Mon, 05 Sep 2033 12:44:41 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1694177081600105-4851181815464699539
+
+{
+    "ok": true
+}
+]]></system-out>
+  </testcase>
+</testsuite>
