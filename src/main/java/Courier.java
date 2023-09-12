@@ -19,7 +19,6 @@ public class Courier {
     public static Courier noPassword(String login, String firstName,int id) {
         return new Courier(login,firstName,id);
     }
-
     public Courier(String firstName, int id) {
         this.firstName = firstName;
         this.id = id;

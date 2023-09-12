@@ -4,6 +4,7 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.hamcrest.CoreMatchers;
 import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Optional;
@@ -16,14 +17,18 @@ public class CreateCourierTest {
     public static final Courier COURIER = new Courier("CourierOne", "first","Courier", 0);
     private ScooterServiceClient client = new ScooterServiceClient();
 
+    @Before
+    public void client() {
+    RequestSpecification requestSpecification =
+            new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
+                    .setContentType(ContentType.JSON)
+                    .build();
+        client.setRequestSpecification(requestSpecification);
+    }
+
+
     @Test
     public void createCourier_expOk_test() {
-
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
 
         ValidatableResponse response = client.createCourier(COURIER);
         response.assertThat().body("ok", CoreMatchers.is(true));
@@ -31,12 +36,6 @@ public class CreateCourierTest {
 
     @Test
     public void createCourier_exp201_test() {
-
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
 
         ValidatableResponse response = client.createCourier(COURIER);
         response.assertThat().statusCode(201);
@@ -46,12 +45,6 @@ public class CreateCourierTest {
     @Test
     public void createCourier_duplicatesCod_test() {
 
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
-
         ValidatableResponse response1 = client.createCourier(COURIER);
         ValidatableResponse response2 = client.createCourier(COURIER);
         response2.assertThat().statusCode(409);
@@ -60,12 +53,6 @@ public class CreateCourierTest {
 
     @Test
     public void createCourier_duplicatesBody_test() {
-
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
 
         ValidatableResponse response1 = client.createCourier(COURIER);
         ValidatableResponse response2 = client.createCourier(COURIER);
@@ -77,11 +64,6 @@ public class CreateCourierTest {
     @Test
     public void createCourier_noLogin_test() {
 
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
         Courier courier = new Courier("first","Courier", 0);
         ValidatableResponse response = client.createCourier(courier);
         response.assertThat().statusCode(400);
@@ -90,11 +72,6 @@ public class CreateCourierTest {
     @Test
     public void createCourier_noPassword_test() {
 
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
         Courier courier = Courier.noPassword("CourierOne","Courier", 0);
         ValidatableResponse response = client.createCourier(courier);
         response.assertThat().statusCode(400);
@@ -104,11 +81,6 @@ public class CreateCourierTest {
     @Test
     public void createCourier_noPassword_noLogin_test() {
 
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
         Courier courier = new Courier("Courier", 0);
         ValidatableResponse response = client.createCourier(courier);
         response.assertThat().statusCode(400);
@@ -118,12 +90,6 @@ public class CreateCourierTest {
     @Test
     public void createCourier_authorization_test() {
 
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
-
         ValidatableResponse response = client.createCourier(COURIER);
         assertEquals(200,client.login(Credentials.fromCourier(COURIER)).extract().statusCode());
     }
@@ -132,12 +98,6 @@ public class CreateCourierTest {
     @Test
     public void createCourier_authorization_noLogin_test() {
 
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
-
         ValidatableResponse response = client.createCourier(COURIER);
         Courier courier = new Courier("first","Courier", 0);
         assertEquals(400,client.login(Credentials.fromCourier(courier)).extract().statusCode());
@@ -145,12 +105,6 @@ public class CreateCourierTest {
 
     @Test
     public void createCourier_authorization_noLoginMessage_test() {
-
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
 
         ValidatableResponse response = client.createCourier(COURIER);
         Courier courier = new Courier("first","Courier", 0);
@@ -161,12 +115,6 @@ public class CreateCourierTest {
     @Test
     public void createCourier_authorization_noPassword_test() {
 
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
-
         ValidatableResponse response = client.createCourier(COURIER);
         Courier courier = Courier.noPassword("CourierOne","Courier", 0);
         assertEquals(400,client.login(Credentials.fromCourier(courier)).extract().statusCode());
@@ -174,12 +122,6 @@ public class CreateCourierTest {
 
     @Test
     public void createCourier_authorization_noPasswordMessage_test() {
-
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
 
         ValidatableResponse response = client.createCourier(COURIER);
         Courier courier = Courier.noPassword("CourierOne","Courier", 0);
@@ -190,11 +132,6 @@ public class CreateCourierTest {
     @Test
     public void createCourier_authorization_loginError_test() {
 
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
         Courier courier = new Courier("CourierOne+добавили_текст", "first","Courier", 0);
         ValidatableResponse response = client.createCourier(COURIER);
         assertEquals(404,client.login(Credentials.fromCourier(courier)).extract().statusCode());
@@ -203,11 +140,6 @@ public class CreateCourierTest {
     @Test
     public void createCourier_authorization_loginErrorMessage_test() {
 
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
         Courier courier = new Courier("CourierOne+добавили_текст", "first","Courier", 0);
         ValidatableResponse response = client.createCourier(COURIER);
         assertEquals("Учетная запись не найдена",client.login(Credentials.fromCourier(courier)).
@@ -217,11 +149,6 @@ public class CreateCourierTest {
     @Test
     public void authorization_containsId_test() {
 
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder().setBaseUri(SCOOTER_URI)
-                        .setContentType(ContentType.JSON)
-                        .build();
-        client.setRequestSpecification(requestSpecification);
         ValidatableResponse response = client.createCourier(COURIER);
         assertNotNull(client.login(Credentials.fromCourier(COURIER)).
                 extract().body().jsonPath().get("id"));
